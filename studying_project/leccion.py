@@ -40,7 +40,7 @@ class Leccion:
             if self.diccionario_das["das"] == "":
                 self.diccionario_das["das"] = {palabras[1]:palabras[2]}
             else:
-                self.diccionario_der["das"][palabras[1]] = palabras[2]
+                self.diccionario_das["das"][palabras[1]] = palabras[2]
             print("Nueva lista de das: ", self.diccionario_das)
 
     def guardar_lista_en_diccionario(self, articulo, lista_palabras_nuevas):

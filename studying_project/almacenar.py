@@ -1,5 +1,4 @@
 import csv
-import pandas as pd
 
 class Almacenar:
 
@@ -10,7 +9,8 @@ class Almacenar:
         self.data_storage = open(self.path, "w")
     
     def un_dato(self, dato):
-        self.data_storage.write("Leccion:" + str(dato))
+        if dato > 0:
+            self.data_storage.write("Leccion:" + str(dato))
 
     def una_lista(self, dato, saltar):
         for valor in dato:
